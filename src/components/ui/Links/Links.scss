@@ -1,0 +1,18 @@
+.links {
+  padding: 18px 31px 19px 41px;
+  background-color: #ffd700;
+  color: #000;
+  font-size: 20px;
+  border: 1px solid transparent;
+  transition: 0.3s ease;
+  &:hover {
+    background: #fff;
+    border: 1px solid #ffd700;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+    .links {
+        padding: 18px 14px 19px 15px;
+    }
+}
