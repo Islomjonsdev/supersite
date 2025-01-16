@@ -1,0 +1,73 @@
+.supersit_card {
+  position: relative;
+  height: 518px;
+  background-image: url("../../assets/images/body.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-block: 100px;
+  @media (max-width: 1240px) {
+    height: 612px;
+  }
+  @media (max-width: 923px) {
+    padding-block: 30px;
+  }
+  @media (max-width: 710px) {
+    height: 412px;
+  }
+
+  .container {
+    max-width: 1400px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .supersit_card_top {
+    margin-bottom: 37px;
+    h3 {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 50px;
+      line-height: 69px;
+      text-transform: uppercase;
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  .supersit_card_card {
+    display: flex;
+    justify-content: space-between;
+    li {
+      max-width: 340px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 84px 0px;
+      border: 1px solid black;
+      cursor: pointer;
+      &:hover {
+        background: #0000000d;
+      }
+      span {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 80px;
+        line-height: 69px;
+        text-transform: uppercase;
+        color: rgb(255, 215, 0);
+      }
+
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: rgb(255, 255, 255);
+      }
+    }
+  }
+}
