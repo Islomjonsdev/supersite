@@ -2,8 +2,9 @@ import React from "react";
 import "./Header.scss";
 import { Link } from "react-router-dom";
 import Links from "../../ui/Links/Links";
-import logo from "../../../assets/svg/logo.svg";
-import hamburgerIcon from "../../../assets/icons/hamburger.svg"
+// import logo from "../../../assets/svg/logo.svg";
+import hamburgerIcon from "../../../assets/svg/hamburger.svg"
+import logo from "../../../assets/images/logo.png"
 
 const Header = () => {
   const navLinks = [
@@ -36,8 +37,9 @@ const Header = () => {
     <header>
       <div className="container">
         <div className="header_container">
-          <Link to={"/"}>
+          <Link className="header_log_link" to={"/"}>
             <img src={logo} alt="logo" />
+            <p>Supersite</p>
           </Link>
           <ul>
             {navLinks?.map((links, id) => (
@@ -52,9 +54,9 @@ const Header = () => {
               <option value="">Nav</option>
             </select>
             <Links title={"+99899 810-70-90"} />
-          <button className="header_btn">
+            <button className="header_btn">
               <img src={hamburgerIcon} alt="" />
-          </button>
+            </button>
           </div>
         </div>
       </div>

@@ -1,0 +1,66 @@
+.voucher {
+  background-color: #2a2a2a;
+  padding: 45px 0px 20px 0px;
+  position: relative;
+
+  .container {
+    max-width: 1440px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .voucher_wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .voucher_btn {
+          position: absolute;
+          top: -50px;
+
+      }
+
+      h1 {
+          color: #fff;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 50px;
+          line-height: 69px;
+          text-transform: uppercase;
+          color: rgb(255, 255, 255);
+      }
+
+      .voucher_text {
+          max-width: 550px;
+          width: 100%;
+          margin-bottom: 70px;
+          p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 23px;
+            text-align: center;
+            text-transform: uppercase;
+            color: rgb(255, 255, 255);
+          }
+      }
+
+      .voucher_link {
+        padding: 18px 31px 19px 41px;
+        background-color: #ffd700;
+        color: #000;
+        font-size: 20px;
+        border: 1px solid transparent;
+        transition: 0.3s ease;
+
+        &:hover {
+            background: #fff;
+            border: 1px solid #ffd700;
+          }
+      }
+  }
+}
