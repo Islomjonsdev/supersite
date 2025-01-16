@@ -1,8 +1,13 @@
 import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Voucher.scss";
 
 const Voucher = () => {
+    const [ isopen, setIsOpen ] = useState(true)
+    const handleToggle = () => {
+        setIsOpen((prevState) => !prevState); // Toggle the state.
+      };
   return (
     <section className="voucher">
       <div className="container">
