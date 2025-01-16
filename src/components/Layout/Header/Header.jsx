@@ -2,9 +2,8 @@ import React from "react";
 import "./Header.scss";
 import { Link } from "react-router-dom";
 import Links from "../../ui/Links/Links";
-// import logo from "../../../assets/svg/logo.svg";
 import hamburgerIcon from "../../../assets/svg/hamburger.svg"
-import logo from "../../../assets/images/logo.png"
+import logo from "../../../assets/icons/logo.svg"
 
 const Header = () => {
   const navLinks = [

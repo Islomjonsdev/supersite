@@ -5,23 +5,41 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-block: 100px;
-  @media (max-width: 1240px) {
-    height: 612px;
-  }
-  @media (max-width: 923px) {
-    padding-block: 30px;
-  }
-  @media (max-width: 710px) {
-    height: 412px;
+
+  // Overlay styling
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); // Adjust the color and opacity as needed
+    z-index: 1;
   }
 
+  // Ensure other content is above the overlay
   .container {
+    position: relative;
+    z-index: 2;
     max-width: 1400px;
     width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  @media (max-width: 1240px) {
+    height: 612px;
+  }
+
+  @media (max-width: 923px) {
+    padding-block: 30px;
+  }
+
+  @media (max-width: 710px) {
+    height: 412px;
   }
 
   .supersit_card_top {
@@ -47,10 +65,11 @@
       align-items: center;
       justify-content: center;
       padding: 84px 0px;
-      border: 1px solid black;
+      border: 1px solid #e5e5e50d;
       cursor: pointer;
       &:hover {
-        background: #0000000d;
+        background: #1b1b1b;
+        opacity: 0.5;
       }
       span {
         font-style: normal;

@@ -1,0 +1,20 @@
+.contact {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px;
+
+  a {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+}
