@@ -14,12 +14,12 @@ const Home = () => {
   return (
     <main>
       <div className="contact">
-        <a href="tel:+998998107090">
+        {/* <a href="tel:+998998107090">
           <img src={telegramIcon} alt="" />
         </a>
         <a href="tel:+998998107090">
           <img src={callIcon} alt="" />
-        </a>
+        </a> */}
       </div>
       <Hero />
       <Voucher />
