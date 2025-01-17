@@ -7,6 +7,8 @@ import Voucher from "../../components/Voucher/Voucher";
 import telegramIcon from "../../assets/icons/telegram.svg";
 import callIcon from "../../assets/icons/call.svg";
 import "./Home.scss";
+import OurWork from "../../components/OurWork/OurWork";
+import Application from "../../components/Application/Application";
 
 const Home = () => {
   return (
@@ -24,6 +26,8 @@ const Home = () => {
       <Supersite />
       <SupersiteCard />
       <Services />
+      <OurWork />
+      <Application />
     </main>
   );
 };

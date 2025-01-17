@@ -11,7 +11,7 @@
   }
 
   .services_header {
-      margin-bottom: 60px;
+    margin-bottom: 60px;
     h3 {
       font-style: normal;
       font-weight: 300;
@@ -23,9 +23,8 @@
   }
 
   .services_list {
-   
-      max-width: 682px;
-      width: 100%;
+    max-width: 682px;
+    width: 100%;
     .services_item {
       background: #ffd700;
       padding: 12px 16px;
@@ -34,10 +33,11 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        cursor: pointer;
         p {
-            color: #1b1b1b;
-            font-size: 16px;
-            text-transform: uppercase;
+          color: #1b1b1b;
+          font-size: 16px;
+          text-transform: uppercase;
         }
       }
 
@@ -56,30 +56,30 @@
         background-color: black;
         margin-top: 20px;
         div {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          text-align: center;
+          width: 100%;
+          &::after {
+            content: "";
+            display: inline-block;
+            border: 1px solid grey;
             width: 100%;
-            &::after {
-                content: "";
-                display: inline-block;
-                border: 1px solid grey;
-                width: 100%;
-            }
+          }
 
-            &:last-child::after {
-                border: none;
-            }
-          
-            p {
-                font-style: normal;
-                font-weight: 300;
-                font-size: 20px;
-                line-height: 38px;
-                text-transform: uppercase;
-                color: rgb(255, 255, 255);
-            }
+          &:last-child::after {
+            border: none;
+          }
+
+          p {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 38px;
+            text-transform: uppercase;
+            color: rgb(255, 255, 255);
+          }
         }
       }
     }
