@@ -6,7 +6,6 @@
   background-size: cover;
   padding-block: 100px;
 
-  // Overlay styling
   &::before {
     content: "";
     position: absolute;
@@ -14,11 +13,10 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); // Adjust the color and opacity as needed
+    background-color: rgba(0, 0, 0, 0.5); 
     z-index: 1;
   }
 
-  // Ensure other content is above the overlay
   .container {
     position: relative;
     z-index: 2;
@@ -70,6 +68,7 @@
       &:hover {
         background: #1b1b1b;
         opacity: 0.5;
+       
       }
       span {
         font-style: normal;
@@ -77,7 +76,7 @@
         font-size: 80px;
         line-height: 69px;
         text-transform: uppercase;
-        color: rgb(255, 215, 0);
+        color: #ffd700;
       }
 
       p {

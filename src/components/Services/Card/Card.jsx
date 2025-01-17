@@ -1,11 +1,10 @@
-import "./Services.scss";
+import "./Card.scss";
 import { useState } from "react";
-import { accardiondata } from "../../api";
+import { accardiondata2 } from "../../../api/index";
 import { FaAngleDown } from "react-icons/fa6";
 import { HiOutlineChevronUp } from "react-icons/hi";
-import Card from "./Card/Card";
 
-const Services = () => {
+const Card = () => {
   const [collapse, setCollapse] = useState(false);
   const openToogle = (id) => {
     if (collapse === id) {
@@ -15,16 +14,11 @@ const Services = () => {
     }
   };
   return (
-    <section className="services">
-      <div className="container">
-        <div className="services_header">
-          <h3>Услуги</h3>
-        </div>
-        <div style={{display: "flex", gap: "5px"}}>
-        <div className="services_list">
-          {accardiondata?.map((item, id) => (
-            <div className="services_item" key={id} onClick={() => openToogle(id)}>
-              <div className="services__header">
+    <section className="card">
+        <div className="card_list">
+          {accardiondata2?.map((item, id) => (
+            <div className="card_item" key={id} onClick={() => openToogle(id)}>
+              <div className="card_header">
                 <p>{item?.title}</p>
                 <span>
                   {collapse === id ? <HiOutlineChevronUp /> : <FaAngleDown />}
@@ -33,7 +27,7 @@ const Services = () => {
 
               <div
                 className={
-                  collapse === id ? "services__body show" : "services__body"
+                  collapse === id ? "card_body show" : "card_body"
                 }
               >
                 <div>
@@ -52,11 +46,8 @@ const Services = () => {
             </div>
           ))}
         </div>
-        <Card />
-        </div>
-      </div>
     </section>
   );
 };
 
-export default Services;
+export default Card;
