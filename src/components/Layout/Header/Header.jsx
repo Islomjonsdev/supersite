@@ -6,35 +6,49 @@ import logo from "../../../assets/icons/logo.svg";
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import Modal from "../../ui/Modal/Modal";
+import i18n from "../../../locales/i18next";
+import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);
+  const [isActive, setIsActive] = useState(false);
+  const [changeLang, setChangeLang] = useState(i18n.language || "uz");
+
+  const { t } = useTranslation()
+  const handleChangeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+    setChangeLang(lang);
+    setIsActive(false)
+  };
+
+
   const handleClosePupop = () => {
-      setIsOpenModal(false)
-  }
+    setIsOpenModal(false);
+  };
   const navLinks = [
     {
-      name: "Услуги",
+      name: t("services"),
       to: "/about",
     },
     {
-      name: "Портфолио",
+      name: t("portfolio"),
       to: "/about",
     },
     {
-      name: "О нас",
+      name: t("aboutUs"),
       to: "/about",
     },
     {
-      name: "Кoманда",
+      name: t("team"),
       to: "/about",
     },
     {
-      name: "Блог",
+      name: t("blog"),
       to: "/about",
     },
     {
-      name: "Отзывы",
+      name: t("takl"),
       to: "/about",
     },
   ];
@@ -55,10 +69,19 @@ const Header = () => {
               ))}
             </ul>
 
-            <div>
-              <select name="" id="">
-                <option value="">Nav</option>
-              </select>
+            <div className="header_right">
+              <div className="header_lan_wrapper1" onClick={() => setIsActive(!isActive)}>
+                <div className="header_lan_wrapper">
+                  <p>{changeLang.toUpperCase()}</p>
+                  {isActive === false ? <IoIosArrowDown /> : <IoIosArrowUp />}
+                </div>
+                {isActive && (
+                  <div className="langs">
+                    <div onClick={() => handleChangeLanguage("uz")}>Uz</div>
+                    <div onClick={() => handleChangeLanguage("ru")}>Ru</div>
+                  </div>
+                )}
+              </div>
               <Links title={"+99899 810-70-90"} />
               <button
                 className="header_btn"
@@ -75,18 +98,22 @@ const Header = () => {
           <div className="modal_body">
             <div>
               <button onClick={() => setIsOpenModal(false)}>
-                  <IoMdClose />
+                <IoMdClose />
               </button>
             </div>
 
             <ul>
               {navLinks?.map((linksItem, id) => (
                 <li key={id}>
-                  <Link onClick={handleClosePupop} to={linksItem?.to}>{linksItem?.name}</Link>
+                  <Link onClick={handleClosePupop} to={linksItem?.to}>
+                    {linksItem?.name}
+                  </Link>
                 </li>
               ))}
             </ul>
-            <Link className="header_modal_contact" to={"tel:+998998107090"}>+99899 810-70-90</Link>
+            <Link className="header_modal_contact" to={"tel:+998998107090"}>
+              +99899 810-70-90
+            </Link>
           </div>
         </Modal>
       )}

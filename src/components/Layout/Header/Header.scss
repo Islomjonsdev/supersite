@@ -60,12 +60,40 @@ header {
       }
     }
 
-    div {
+    .header_right {
       display: flex;
       align-items: center;
       justify-content: flex-end;
       max-width: 340px;
       width: 100%;
+      gap: 30px;
+      .header_lan_wrapper1 {
+          position: relative;
+          .header_lan_wrapper {
+            display: flex;
+            align-items: center;
+            border: 1px solid grey;
+            gap: 10px;
+            padding: 5px 10px;
+            color: #fff;
+          }
+
+          .langs {
+              position: absolute;
+              background-color: #fff;
+              z-index: 9999;
+              top: 30px;
+              left: 0px;
+              padding: 10px 24px;
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              div {
+                  cursor: pointer;
+              }
+          }
+      }
+
     }
 
     .header_btn {
@@ -85,13 +113,27 @@ header {
         display: none;
       }
 
-      div {
+      .header_right {
         display: flex;
         align-items: center;
         gap: 20px;
 
-        select {
-          display: none;
+        .header_lan_wrapper1 {
+            .header_lan_wrapper {
+             display: none;
+            }
+  
+            .langs {
+                position: absolute;
+                background-color: #fff;
+                z-index: 9999;
+                top: 30px;
+                left: 0px;
+                padding: 5px 24px;
+                div {
+                    cursor: pointer;
+                }
+            }
         }
       }
 
@@ -151,20 +193,20 @@ header {
     align-items: flex-end;
     justify-content: flex-end;
     button {
-        border: none;
-        background: none;
-        cursor: pointer;
-        color: #fff;
+      border: none;
+      background: none;
+      cursor: pointer;
+      color: #fff;
 
-        svg {
-            width: 30px;
-            height: 30px;
-        }
+      svg {
+        width: 30px;
+        height: 30px;
+      }
     }
   }
 
   ul {
-      margin-bottom: 59px;
+    margin-bottom: 59px;
     li {
       margin: 10px 0px;
       &::after {
