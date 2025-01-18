@@ -27,8 +27,8 @@ const Home = () => {
       <SupersiteCard />
       <Services />
       <OurWork />
-      {/* <Application />
-      <Branches /> */}
+      <Application />
+      {/* <Branches /> */}
     </main>
   );
 };

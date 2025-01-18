@@ -32,7 +32,24 @@
 }
 
 @media only screen and (max-width: 768px) {
-  button {
-    padding: 18px 14px 19px 15px;
-  }
+    .application_form {
+        display: flex;
+        flex-direction: column;
+        max-width:768px;
+        width: 100%;
+        input {
+          height: 23px;
+          background-color: transparent;
+          border-top: transparent;
+          border-left: transparent;
+          border-right: transparent;
+          margin-bottom: 35px;
+          outline: transparent;
+          color: white;
+        }
+      
+        button {
+            padding: 18px 14px 19px 15px;
+          }
+      }
 }
