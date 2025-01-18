@@ -36,10 +36,10 @@ i18n.use(initReactI18next).init({
       },
     },
   },
-  lng: 'uz', // boshlang'ich til
-  fallbackLng: 'uz', // til topilmasa foydalaniladi
+  lng: 'uz',
+  fallbackLng: 'uz', 
   interpolation: {
-    escapeValue: false, // XSSdan himoya
+    escapeValue: false, 
   },
 });
 
