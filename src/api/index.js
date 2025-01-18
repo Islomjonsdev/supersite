@@ -70,3 +70,20 @@ const accardiondata2 = [
 ];
 
 export { accardiondata2 };
+
+const branches = [
+  {
+    branch: "Ташкент",
+    location: "Юнусабад, ул. Амира Темура, стройцентр, 2 этаж",
+  },
+  {
+    branch: "Санкт-Петербург",
+    location: "Академика Павлова 5А Ривер Хаус 2 этаж",
+  },
+  {
+    branch: "Cамарканд",
+    location: "info@supersite.uz Самарканд, Мирсаид барака улица , 20-уй",
+  },
+];
+
+export { branches };

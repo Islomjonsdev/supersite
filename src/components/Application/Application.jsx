@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "./Application.scss";
 import ApplicationCall from "./ApplicationCall/ApplicationCall";
+import ApplicationForm from "./ApplicationForm/ApplicationForm";
 import ApplicationVoucher from "./ApplicationVoucher/ApplicationVoucher";
 
 const Application = () => {
@@ -28,6 +29,8 @@ const Application = () => {
 
           {tab === "связаться с нами" && <ApplicationCall />}
         </div>
+
+        <ApplicationForm />
       </div>
     </section>
   );

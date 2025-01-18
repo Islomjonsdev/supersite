@@ -1,0 +1,38 @@
+.application_form {
+  display: flex;
+  flex-direction: column;
+  max-width: 464px;
+  width: 100%;
+  input {
+    height: 23px;
+    background-color: transparent;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    margin-bottom: 35px;
+    outline: transparent;
+    color: white;
+  }
+
+  button {
+    max-width: 301px;
+    width: 100%;
+    padding: 18px 31px 19px 41px;
+    background-color: #ffd700;
+    color: #000;
+    font-size: 20px;
+    border: 1px solid transparent;
+    transition: 0.3s ease;
+    cursor: pointer;
+    &:hover {
+      background: #fff;
+      border: 1px solid #ffd700;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  button {
+    padding: 18px 14px 19px 15px;
+  }
+}

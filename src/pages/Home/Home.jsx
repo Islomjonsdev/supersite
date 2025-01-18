@@ -9,6 +9,7 @@ import callIcon from "../../assets/icons/call.svg";
 import "./Home.scss";
 import OurWork from "../../components/OurWork/OurWork";
 import Application from "../../components/Application/Application";
+import Branches from "../../components/Branches/Branches";
 
 const Home = () => {
   return (
@@ -28,6 +29,7 @@ const Home = () => {
       <Services />
       <OurWork />
       <Application />
+      <Branches />
     </main>
   );
 };
