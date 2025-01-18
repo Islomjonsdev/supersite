@@ -10,7 +10,7 @@
   }
 
   .branches_wrapper {
-      display: flex;
+    display: flex;
     .branches_left {
       max-width: 726px;
       width: 100%;
@@ -31,7 +31,7 @@
         div {
           margin-bottom: 28px;
           &:last-child {
-              margin: 0;
+            margin: 0;
           }
           h4 {
             font-style: normal;
@@ -54,7 +54,21 @@
     }
 
     .branches_right {
-        width: 100%;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .branches {
+    padding: 90px 0px 100px 0px;
+
+    .branches_wrapper {
+      display: flex;
+      flex-direction: column;
+      .branches_left {
+        margin-bottom: 15px;
+      }
     }
   }
 }
