@@ -23,8 +23,8 @@ const Home = () => {
       </div>
       <Hero />
       <Voucher />
-      {/* <Supersite />
-      <SupersiteCard />
+      <Supersite />
+      {/* <SupersiteCard />
       <Services />
       <OurWork />
       <Application />
