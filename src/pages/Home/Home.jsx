@@ -28,7 +28,7 @@ const Home = () => {
       <Services />
       <OurWork />
       <Application />
-      {/* <Branches /> */}
+      <Branches />
     </main>
   );
 };
