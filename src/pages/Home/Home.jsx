@@ -22,8 +22,8 @@ const Home = () => {
           <img src={callIcon} alt="" />
         </a> */}
       </div>
-      {/* <Hero />
-      <Voucher />
+      <Hero />
+      {/* <Voucher />
       <Supersite />
       <SupersiteCard />
       <Services />
