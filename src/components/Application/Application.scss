@@ -12,6 +12,12 @@
     }
 
     .application_btn {
-        
+        button {
+            background-color: red;
+        }
+        .active {
+            background-color: black;
+            color: white;
+        }
     }
 }
