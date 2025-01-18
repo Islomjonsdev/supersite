@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import "./Application.scss";
+import ApplicationCall from "./ApplicationCall/ApplicationCall";
+import ApplicationVoucher from "./ApplicationVoucher/ApplicationVoucher";
 
 const Application = () => {
   const [tab, setTab] = useState("Зaявка по ваучеру");
@@ -21,10 +23,10 @@ const Application = () => {
             связаться с нами
           </button>
         </div>
-        <div>
-          {tab === "Зaявка по ваучеру" && <div>Зaявка по ваучеру</div>}
+        <div className="applicatopn_wrapper">
+          {tab === "Зaявка по ваучеру" && <ApplicationVoucher />}
 
-          {tab === "связаться с нами" && <div>связаться с нами</div>}
+          {tab === "связаться с нами" && <ApplicationCall />}
         </div>
       </div>
     </section>
