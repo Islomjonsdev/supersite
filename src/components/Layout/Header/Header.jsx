@@ -15,13 +15,12 @@ const Header = () => {
   const [isActive, setIsActive] = useState(false);
   const [changeLang, setChangeLang] = useState(i18n.language || "uz");
 
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   const handleChangeLanguage = (lang) => {
     i18n.changeLanguage(lang);
     setChangeLang(lang);
-    setIsActive(false)
+    setIsActive(false);
   };
-
 
   const handleClosePupop = () => {
     setIsOpenModal(false);
@@ -70,7 +69,10 @@ const Header = () => {
             </ul>
 
             <div className="header_right">
-              <div className="header_lan_wrapper1" onClick={() => setIsActive(!isActive)}>
+              <div
+                className="header_lan_wrapper1"
+                onClick={() => setIsActive(!isActive)}
+              >
                 <div className="header_lan_wrapper">
                   <p>{changeLang.toUpperCase()}</p>
                   {isActive === false ? <IoIosArrowDown /> : <IoIosArrowUp />}
