@@ -1,6 +1,6 @@
 header {
   background-color: #2a2a2a;
-  
+
   .container {
     max-width: 1440px;
     width: 100%;
@@ -51,8 +51,8 @@ header {
           color: #fff;
           font-size: 16px;
           &:hover {
-            color: #fff; 
-            text-shadow: 0 0 8px #fff, 0 0 15px; 
+            color: #fff;
+            text-shadow: 0 0 8px #fff, 0 0 15px;
             border-radius: 5px;
             transition: all 0.3s ease-in-out;
           }
@@ -131,6 +131,67 @@ header {
           display: none;
         }
       }
+
+      .header_btn {
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
     }
+  }
+}
+
+.modal_body {
+  background-color: #000;
+  padding: 10px;
+
+  div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    button {
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: #fff;
+
+        svg {
+            width: 30px;
+            height: 30px;
+        }
+    }
+  }
+
+  ul {
+      margin-bottom: 59px;
+    li {
+      margin: 10px 0px;
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        border: 1px solid grey;
+      }
+      a {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .header_modal_contact {
+    padding: 18px 31px 19px 41px;
+    background-color: #ffd700;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
   }
 }

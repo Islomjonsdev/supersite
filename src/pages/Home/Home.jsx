@@ -22,14 +22,14 @@ const Home = () => {
           <img src={callIcon} alt="" />
         </a> */}
       </div>
-      <Hero />
+      {/* <Hero />
       <Voucher />
       <Supersite />
       <SupersiteCard />
       <Services />
       <OurWork />
       <Application />
-      <Branches />
+      <Branches /> */}
     </main>
   );
 };

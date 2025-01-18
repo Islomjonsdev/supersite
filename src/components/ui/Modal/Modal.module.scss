@@ -1,0 +1,24 @@
+.modalContainer {
+    background-color: rgba(0, 0, 0, 0.604);
+    width: 80%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    display: grid;
+    animation: Opac 0.3s ease-in;
+    .modalBody {
+        position: relative;
+        z-index: 99;
+        // background-color: #000;
+    }
+  }
+  
+  @keyframes Opac {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
