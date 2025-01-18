@@ -14,7 +14,9 @@ i18n.use(initReactI18next).init({
         takl: "Sharhlar",
         //Hero
         it_services: "IT xizmatlar uchun",
-        business: "har qanday darajadagi biznes"
+        business: "har qanday darajadagi biznes",
+        more: "5 yildan ortiq vaqt davomida bizning e'tiborimiz shu biznesingizni onlayn o'zgartirish",
+        callWithYou: "Biz bilan bog'lanish",
       },
     },
     ru: {
@@ -28,7 +30,9 @@ i18n.use(initReactI18next).init({
         takl: "Отзывы",
 
         it_services: "IT-услуги для ",
-        business: "бизнеса любого уровня"
+        business: "бизнеса любого уровня",
+        more: "Более 5 лет наш фокус в онлайн трансформации Вашего бизнеса",
+        callWithYou: "Связаться с нами",
       },
     },
   },

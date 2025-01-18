@@ -20,7 +20,7 @@ const Hero = () => {
               Вашего бизнеса
             </p>
           </div>
-          <Links title={"Связаться с нами"} />
+          <Links title={t("callWithYou")} />
         </div>
       </div>
     </section>
