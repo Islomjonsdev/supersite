@@ -17,3 +17,44 @@
   }
 }
 
+@media only screen and (max-width: 1126px) {
+    .supersite {
+        .supersite_wrapper {
+          .supersite_top {
+            padding: 20px 0px 40px 0px;
+      
+            h1 {
+              font-size: 150px;
+            }
+          }
+        }
+      }
+}
+
+@media only screen and (max-width: 768px) {
+    .supersite {
+        .supersite_wrapper {
+          .supersite_top {
+            padding: 20px 0px 40px 0px;
+      
+            h1 {
+              font-size: 60px;
+            }
+          }
+        }
+      }
+}
+
+@media only screen and (max-width: 768px) {
+    .supersite {
+        .supersite_wrapper {
+          .supersite_top {
+            padding: 20px 0px 40px 0px;
+      
+            h1 {
+              font-size: 60px;
+            }
+          }
+        }
+      }
+}
