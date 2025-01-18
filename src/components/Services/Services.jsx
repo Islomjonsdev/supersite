@@ -20,7 +20,7 @@ const Services = () => {
         <div className="services_header">
           <h3>Услуги</h3>
         </div>
-        <div style={{display: "flex", gap: "5px"}}>
+        <div className="services_info">
         <div className="services_list">
           {accardiondata?.map((item, id) => (
             <div className="services_item" key={id} onClick={() => openToogle(id)}>
