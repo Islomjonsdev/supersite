@@ -36,8 +36,8 @@ i18n.use(initReactI18next).init({
       },
     },
   },
-  lng: 'uz',
-  fallbackLng: 'uz', 
+  lng: 'ru',
+  fallbackLng: 'ru', 
   interpolation: {
     escapeValue: false, 
   },

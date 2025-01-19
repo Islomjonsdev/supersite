@@ -13,7 +13,7 @@ import { useTranslation } from "react-i18next";
 const Header = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);
   const [isActive, setIsActive] = useState(false);
-  const [changeLang, setChangeLang] = useState(i18n.language || "uz");
+  const [changeLang, setChangeLang] = useState(i18n.language || "ru");
 
   const { t } = useTranslation();
   const handleChangeLanguage = (lang) => {
