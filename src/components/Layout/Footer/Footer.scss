@@ -275,6 +275,26 @@
         }
       }
 
+      .footer_branches {
+        max-width: 289px;
+        width: 100%;
+        div {
+          margin-bottom: 28px;
+          &:last-child {
+            margin-bottom: 28px;
+          }
+        }
+  
+        a {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 22px;
+          text-decoration-line: underline;
+          color: rgb(255, 215, 0);
+        }
+      }
+
       .footer_branches1 {
         margin-bottom: 30px;
         div {
