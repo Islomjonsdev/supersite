@@ -13,7 +13,16 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .links {
-        padding: 18px 14px 19px 15px;
-    }
+  .links {
+    padding: 18px 14px 19px 15px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .links {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    padding: 18px 14px 19px 15px;
+  }
 }

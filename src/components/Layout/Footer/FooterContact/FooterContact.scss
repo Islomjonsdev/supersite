@@ -2,11 +2,12 @@
   li {
     margin-bottom: 20px;
     .footer_contact_link {
+      display: inline-block;
       font-style: normal;
       font-weight: 300;
       font-size: 30px;
       line-height: 32px;
-      color: rgb(255, 255, 255);
+      color: #ffffff;
     }
   }
 }
